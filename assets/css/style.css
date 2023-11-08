@@ -1,0 +1,150 @@
+/* ------------------------------------------------------ */
+/* Copyright 2023 @Gabriel, @Samuel, @Yan                 */
+/* ------------------------------------------------------ */
+
+/* --------------------------- */
+/* CUSTOM PROPERTY             */
+/* --------------------------- */
+
+:root {
+  /* Colors */
+  --c-primary: #295a40;
+  --c-secondary: #2e2e2e;
+  --c-tertiary: #f0f0f0;
+
+  /* Fonts */
+  --ff-primary: ;
+
+  /* Transition */
+  --transition-1: 0.15s ease;
+  --transition-2: 0.25s ease;
+  --transition-3: 0.25s ease-in;
+}
+
+.dark-mode:root {
+  /* Colors */
+    --c-primary: #3c8962;
+    --c-secondary: #333;
+    --c-tertiary: #dbdbdb;
+}
+
+/* --------------------------- */
+/* RESET                       */
+/* --------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, img, span, input, buttons {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--c-tertiary);
+}
+
+body.active {
+  overflow: hidden;
+}
+
+/* --------------------------- */
+/* Index                       */
+/* --------------------------- */
+
+.index {
+  background-image: url(../img/fundoIndex.jpg);
+}
+
+.inicio {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logoInd {
+  height: 250px;
+  width: 250px;
+}
+
+#idiomas {
+  cursor: pointer;
+  padding-left: 60px;
+  height: 90px;
+  width: 500px;
+  list-style: inside;
+  font-size: 60px;
+  &:hover {
+    font-size: 70px;
+    transition: var(--transition-2);
+  }
+}
+
+/* --------------------------- */
+/* Home                        */
+/* --------------------------- */
+
+#header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logoHea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoHea {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgb(51, 51, 51, 0.65);
+  color: var(--c-tertiary);
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+#fundo {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  background-image: url(../img/fundoBrancoHome.jpg);
+  .dark-mode &{
+    background-image: url(../img/fundoPretoHome.jpg);
+  }
+}
