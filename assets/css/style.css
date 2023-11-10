@@ -20,13 +20,12 @@
   --transition-1: 0.15s ease;
   --transition-2: 0.25s ease;
   --transition-3: 0.25s ease-in;
-}
-
-.dark-mode:root {
-  /* Colors */
+  .dark-mode & {
     --c-primary: #3c8962;
     --c-secondary: #333;
     --c-tertiary: #dbdbdb;
+    --c-quaternary: #FF9D1B;
+  }
 }
 
 /* --------------------------- */
@@ -192,32 +191,25 @@ body.active {
 }
 
 .cardes {
-  display: grid;
+  padding: 10px 0 0 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .card-single {
   width: 20%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &:hover {
+    background-color: var(--c-primary);
+    transition: var(--transition-1);
+  }
 }
 
-.card-single img {
-  height: 350px;
-  width: 70%;
-}
-
-.card-single h3 {
-  margin-top: 5px;
-  font-weight: normal;
-  font-size: 20px;
-}
-
-.card-single p {
-  margin: 10px 0;
-  font-weight: lighter;
-  font-size: 16px;
-  padding-bottom: 20px;
-}
   /* Fim Main */
