@@ -20,12 +20,13 @@
   --transition-1: 0.15s ease;
   --transition-2: 0.25s ease;
   --transition-3: 0.25s ease-in;
-  .dark-mode & {
-    --c-primary: #3c8962;
-    --c-secondary: #333;
-    --c-tertiary: #dbdbdb;
-    --c-quaternary: #FF9D1B;
-  }
+}
+
+.dark-mode {
+  --c-primary: #3c8962;
+  --c-secondary: #333;
+  --c-tertiary: #dbdbdb;
+  --c-quaternary: #FF9D1B;
 }
 
 /* --------------------------- */
