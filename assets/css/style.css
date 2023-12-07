@@ -246,8 +246,6 @@ body.active {
 /* Index                       */
 /* --------------------------- */
 
-/* Main */
-
 .index {
   background-image: url(../img/fundoIndex.jpg);
 }
@@ -280,13 +278,9 @@ body.active {
   }
 }
 
-/* Fim Main */
-
 /* --------------------------- */
 /* Home                        */
 /* --------------------------- */
-
-/* Main */
 
 #fundoMainHome {
   z-index: -1;
@@ -297,7 +291,7 @@ body.active {
   background-position: center;
   background-image: url(../img/fundoBrancoHome.jpg);
   .dark-mode & {
-    background-image: url(../img/fundoPretoHome.jpg);
+    background-image: url(../img/fundoEscuroHome.jpg);
   }
 }
 
@@ -389,13 +383,9 @@ body.active {
   color: var(--c-quaternary);
 }
 
-/* Fim Main */
-
 /* --------------------------- */
 /* Desmatamento                */
 /* --------------------------- */
-
-/* Main */
 
 #fundoMainDesmatamento {
   z-index: -1;
@@ -453,9 +443,11 @@ body.active {
     font-size: 20px;
   }
 }
-/*                       */
-/*        Contato        */
-/*                       */
+
+/* --------------------------- */
+/* Contato                     */
+/* --------------------------- */
+
 #mainContato {
   display: flex;
   justify-content: center;
@@ -463,6 +455,7 @@ body.active {
   flex-direction: column;
   height: 100vh;
 }
+
 .contato {
   background-color: #333;
   width: 30vw;
@@ -473,6 +466,7 @@ body.active {
   flex-direction: column;
   border-radius: 10px;
 }
+
 #contato-inp {
   width: 80%;
   border-radius: 10px;
@@ -480,16 +474,20 @@ body.active {
   border: none;
   text-align: center;
 }
+
 #msg {
   width: 80%;
   border-radius: 5px;
 }
+
 input:focus {
   outline: 1.8px solid #1bff9d;
 }
+
 #msg:focus {
   outline: 1.8px solid #1bff9d;
 }
+
 .sendContato {
   width: 160px;
   height: 50px;
@@ -499,14 +497,85 @@ input:focus {
   transition: var(--transition-2);
   border: none;
 }
+
 .sendContato:hover {
   border: 2px groove #1bff9d;
   transform: none;
   box-shadow: 0px 0px 20px #1bff9d;
 }
+
 .titleContact{
   color: var(--c-quaternary);
   font-style: italic;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-/*Fim contato*/
+
+/* --------------------------- */
+/* Noticias                    */
+/* --------------------------- */
+
+.fundoMainNoticias {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url(../img/fundoBrancoNoticias.png);
+  .dark-mode & {
+      background-image: url(../img/fundoEscuroNoticias.png);
+  }
+}
+
+#ajuste {
+  margin-top: 530px;
+}
+
+.noticias {
+  margin: 30px 200px 0 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tituloNot {
+  font-size: 60px; 
+  text-align: center;
+  color: var(--c-quaternary); 
+}
+
+.noticiasCard {
+  padding: 30px 0;
+  width: 876px;
+  height: 260px;
+  display: flex;
+  border-bottom: 3px solid var(--c-quaternary); 
+  & img {
+    width: 350px;
+    height: 195px;
+    margin-right: 45px;
+  }
+}
+
+.textoNoticias {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  & h3 {
+    font-size: 26px;
+  }
+}
+
+.dataNoticiaCard {
+  color: #8c8c8c;
+  font-size: 16px;
+}
+
+.noticiasMaisLidas {
+  margin-left: 72px;
+}
+.maisLidasCard {
+  list-style: decimal;
+  font-size: 30px;
+  margin: 30px 30px;
+}
