@@ -4,9 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoViva</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body id="home">
+<body id="contato">
+
+  <header>
+    <div class="container">
+      <div id="header"> 
+        <div class="logoHea"><img id="logoHea" src="../img/logo.png" alt="LogoHea"><h1>EcoViva</h1></div>
+        <button type="button" class="btn" id="inicioHea"><a href="homeBR.html">Inicio</a></button>
+        <button type="button" class="btn" id="sobreNosHea"><a href="sobreBR.html">Sobre Nós</a></button>
+        <button type="button" class="btn" id="contatoHea"><a href="contatoBR.html">Contato</a></button>
+        <button type="button" id="btn" onclick="config()"><span class="material-symbols-outlined">menu</span></button>
+        <div class="config">
+          <ul>
+            <li id="idioma" onclick="escolha(id)"><button class="btn-config">Mudar idioma</button></li>
+            <li id="tema" onclick="escolha(id)"><button class="btn-config">Mudar Tema</button></li>
+            <div class="idioma">
+              <ul>
+                <li id="portugues" onclick="escolherIdioma(id)">Português</li>
+                <li id="ingles" onclick="escolherIdioma(id)">English</li>
+              </ul>
+            </div>
+            <div class="tema">
+              <ul>
+                <li id="escuro" onclick="mudarTema(id)">Escuro</li>
+                <li id="claro" onclick="mudarTema(id)">Claro</li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
     <main id="mainContato">
       <form action="" class="contato">
         <h1 class="titleContact">Contact us</h1>
@@ -16,6 +49,33 @@
         <button type="submit" class="sendContato">Send</button>
       </form>
     </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="logoRod"><img id="logoHea" src="../img/logo.png" alt="Logo">
+            <h1>EcoViva</h1>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="contatoRod">
+            <h1 class="tituloRod">Contact:</h1>
+            <ul>
+              <li>Phone: 4002-8922</li>
+              <li>Email: cre.car@ifsp.edu.br</li>
+            </ul>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="sedeRod">
+            <h1 class="tituloRod">Thirst:</h1>
+            <p>R. Pedro Vicente, 625, Canindé, São Paulo - SP</p>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="escritorioRod">
+            <h1 class="tituloRod">Office:</h1>
+            <p>Av. Bahia, 1739, Caraguatatuba - SP</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../js/script.js"></script>
 </body>
 </html>
