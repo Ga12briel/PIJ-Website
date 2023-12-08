@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>EcoViva</title>
+  </head>
+  <body id="sobre">
+    <header>
+      <div class="container">
+        <div id="header">
+          <div class="logoHea">
+            <img id="logoHea" src="../img/logo.png" alt="LogoHea" />
+            <h1>EcoViva</h1>
+          </div>
+          <button type="button" class="btn" id="inicioHea">
+            <a href="homeEN.html">Home</a>
+          </button>
+          <button type="button" class="btn" id="sobreNosHea">
+            <a href="sobreEN.html">About Us</a>
+          </button>
+          <button type="button" class="btn" id="contatoHea">
+            <a href="contatoEN.html">Contact</a>
+          </button>
+          <button type="button" id="btn" onclick="config()">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+          <div class="config">
+            <ul>
+              <li id="idioma" onclick="escolha(id)">
+                <button class="btn-config">Change language</button>
+              </li>
+              <li id="tema" onclick="escolha(id)">
+                <button class="btn-config">Change Theme</button>
+              </li>
+              <div class="idioma">
+                <ul>
+                  <li id="portugues" onclick="escolherIdioma(id)">Português</li>
+                  <li id="ingles" onclick="escolherIdioma(id)">English</li>
+                </ul>
+              </div>
+              <div class="tema">
+                <ul>
+                  <li id="escuro" onclick="mudarTema(id)">Dark</li>
+                  <li id="claro" onclick="mudarTema(id)">White</li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="fundoMainSobrenos">
+        <h1>what</h1>
+        <h2>we do?</h2>
+      </div>
+
+      <section id="quem-somos">
+        <h1 class="titleNos">Who we are?</h1>
+
+        <p class="info">
+          At EcoViva, we prioritize raising awareness about deforestation,
+          seeking to inform and educate. We go beyond words, acting with
+          partnerships in reforestation projects and encouraging sustainable
+          practices. As an active community, we encourage dialogue to create a
+          collective movement. Our actions are supported by scientific research
+          and collaborations with experts, aiming for the best conservation
+          practices. We seek innovations sustainable technologies, from green
+          technologies to agricultural practices, to preserve global
+          biodiversity. Join us on this journey towards sustainability.
+        </p>
+      </section>
+
+      <section id="nossaMissao">
+        <h1 class="titleNos">our mission</h1>
+        <p class="info">
+          Our mission goes beyond online activism; is a genuine commitment to
+          creating a greener and more sustainable world. By joining forces,
+          We aim to transform awareness into tangible actions,
+          ensuring an environmentally healthy future for generations
+          coming ones. Join us at Green Help, where every step counts
+          building a more balanced and resilient planet.
+        </p>
+      </section>
+
+      <section id="desenvolvedores">
+        <div class="imgsNos">
+          <div class="blockImg" id="img1"></div>
+          <div class="blockImg" id="img2"></div>
+          <div class="blockImg" id="img3"></div>
+        </div>
+        <div class="funcao">
+          <span class="spanImg" id="span1"
+            >Marketing <br />
+            (Samuel)
+          </span>
+          <span class="spanImg" id="span2"
+            >Director/Programmer <br />
+            (Gabriel)
+          </span>
+          <span class="spanImg" id="span3"
+            >Programmer/Desiner <br />
+            (Yan)
+          </span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="logoRod"><img id="logoHea" src="../img/logo.png" alt="Logo">
+            <h1>EcoViva</h1>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="contatoRod">
+            <h1 class="tituloRod"><a href="contatoEN.html">Contact:</a></h1>
+            <ul>
+              <li>Phone: 4002-8922</li>
+              <li>Email: cre.car@ifsp.edu.br</li>
+            </ul>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="sedeRod">
+            <h1 class="tituloRod">Thirst:</h1>
+            <p>R. Pedro Vicente, 625, Canindé, São Paulo - SP</p>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="escritorioRod">
+            <h1 class="tituloRod">Office:</h1>
+            <p>Av. Bahia, 1739, Caraguatatuba - SP</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
