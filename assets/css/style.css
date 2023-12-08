@@ -10,6 +10,7 @@
   /* Colors */
   --c-primary: #295a40;
   --c-secondary: #2e2e2e;
+  --c-secondary2: #555454;
   --c-tertiary: #f0f0f0;
   --c-quaternary: #ff9d1b;
   --c-quintenary: rgba(25, 161, 20, 0.35);
@@ -26,6 +27,7 @@
 .dark-mode {
   --c-primary: #3c8962;
   --c-secondary: #333;
+  --c-secondar2y: #4b4a4a;
   --c-tertiary: #dbdbdb;
   --c-quaternary: #1bff9d;
   --c-quintenary: rgb(245, 173, 5, 0.35);
@@ -222,10 +224,12 @@ body.active {
   font-weight: bold;
   font-size: 35px;
 }
+
 .tituloRod a{
   text-decoration: none;
   color: var(--c-quaternary);
 }
+
 .quebraRod {
   width: 100px;
   height: 100px;
@@ -292,6 +296,7 @@ body.active {
   height: 750px;
   width: 100%;
   background-position: center;
+  background-size: cover;
   background-image: url(../img/fundoBrancoHome.jpg);
   .dark-mode & {
     background-image: url(../img/fundoEscuroHome.jpg);
@@ -451,9 +456,6 @@ body.active {
 /* Contato                     */
 /* --------------------------- */
 
-/*                       */
-/*        Contato        */
-/*                       */
 #contato{
   background-image: url('../img/Fundo_contato_claro.png');
   background-position: center ;
@@ -463,6 +465,7 @@ body.active {
     background-image: url('../img/Fundo_contato_escuro.png');
   }
 }
+
 #mainContato {
   display: flex;
   justify-content: center;
@@ -530,35 +533,27 @@ input:focus {
 /* --------------------------- */
 
 .fundoMainNoticias {
-/*Fim contato*/
-
-/* --------------------------- */
-/* Sobre Nós                   */
-/* --------------------------- */
-#quem-somos{
-  display: flex;
-  color: var(--c-quaternary);
-  margin-top: 56vh;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--c-secondary);
-}
-#fundoMainSobrenos{
   z-index: -1;
   position: absolute;
   top: 0;
   height: 750px;
   width: 100%;
   background-size: cover;
-  overflow: hidden;
   background-image: url(../img/fundoBrancoNoticias.png);
   .dark-mode & {
-      background-image: url(../img/fundoEscuroNoticias.png);
+    background-image: url(../img/fundoEscuroNoticias.png);
   }
 }
 
 #ajuste {
   margin-top: 530px;
+}
+
+.fundoNoticias {
+  .dark-mode & {
+    background-color: var(--c-secondary2);
+    color: white;
+  }
 }
 
 .noticias {
@@ -603,15 +598,98 @@ input:focus {
 .noticiasMaisLidas {
   margin-left: 72px;
 }
+
 .maisLidasCard {
   list-style: decimal;
   font-size: 30px;
   margin: 30px 30px;
-  background-image: url('../img/Fundo_contato_claro.png');
+}
+
+.conteudoNoticias {
+  z-index: 1;
+  top: 800px;
+  right: 300px;
+  position: absolute;
+  width: 1500px;
+  height: 1300px;
+  border: 3px solid var(--c-quaternary);
+  background-color: var(--c-tertiary);
+  border-radius: 25px;
+  display: none;
+  padding: 0 30px;
+  & h1 {
+    font-size: 50px;
+    margin: 15px 35px;
+    text-align: center;
+    border-bottom: 3px solid var(--c-primary);
+  }
+  & img {
+    width: 876px;
+    height: 484px;
+  }
+  & p {
+    font-size: 20px;
+    margin: 30px 0;
+  }
   .dark-mode & {
-    background-image: url('../img/Fundo_sobreNós_escuro.png');
+    background-color: var(--c-secondary2);
+    color: white;
   }
 }
+
+.fecharConteudoNoticias {
+  width: 50px;
+  height: 50px;
+  z-index: 3;
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  right: 15px;
+  top: 15px;
+  color: red;
+}
+
+.ativaConteudoNoticias {
+  display: block;
+}
+
+.paginasNoticias {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  & * {
+    margin: 15px;
+  }
+  & p {
+    border-bottom: 5px solid red;
+  }
+}
+
+/* --------------------------- */
+/* Sobre Nós                   */
+/* --------------------------- */
+
+#quem-somos {
+  display: flex;
+  color: var(--c-quaternary);
+  margin-top: 56vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--c-secondary);
+}
+
+#fundoMainSobrenos {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url(../img/fundoBrancoNoticias.png);
+  .dark-mode & {
+    background-image: url(../img/fundoEscuroNoticias.png);
+  }
 }
 
 .titleNos{
@@ -619,6 +697,7 @@ input:focus {
   margin-bottom: 10px;
   font-size: 40px;
 }
+
 .info{
   text-align: center;
   width: 40vw;
@@ -626,10 +705,12 @@ input:focus {
   font-size: 25px;
   
 }
+
 hr{
   width: 100%;
   margin: 25px 0;
 }
+
 #nossaMissao{
   margin-top: 10px;
   display: flex;
@@ -639,6 +720,7 @@ hr{
   background-color: var(--c-secondary);
 
 }
+
 #desenvolvedores{
   display: flex;
   flex-direction: column;
@@ -646,6 +728,7 @@ hr{
   background-color: var(--c-primary);
   color:#fff;
 }
+
 .imgsNos{
   display: flex;
   flex-direction: row;
@@ -653,6 +736,7 @@ hr{
   margin-top: 50px;
   width: 100%;
 }
+
 .blockImg{
  background-color: aqua;
  width: 250px;
@@ -660,27 +744,32 @@ hr{
  border-radius: 50%;
  margin: 10px 0;
 }
+
 #img1{
   background-image: url('../img/Samuel.jfif');
   background-position: center;
   background-size: cover;
 }
+
 #img2{
   background-image: url('../img/Gabriel.jfif');
   background-position: center;
   background-size: cover;
 }
+
 #img3{
   background-image: url('../img/Yan.jfif');
   background-position: center;
   background-size: cover;
 }
+
 .funcao{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   align-items: center;
 }
+
 .spanImg{
   font-weight: 700;
   font-size: x-large;
@@ -689,12 +778,15 @@ hr{
   padding: 10px;
 
 }
+
 #span3{
   left: 40px;
 }
+
 #span1{
   left:20px  ;
 }
+
 #span2{
   left: 60px;
 }

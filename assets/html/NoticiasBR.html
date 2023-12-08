@@ -43,61 +43,159 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="fundoNoticias">
       <div class="container">
-        <div class="fundoMainNoticias"><img src="../img/noticiasFundo.png" alt=""></div>
+        <div class="fundoMainNoticias"></div>
         <div id="ajuste"></div>
         <div id="quebraMain"></div>
         <div class="noticias">
           <div class="todasNoticias">
             <h1 class="tituloNot">Todas as Noticias</h1>
-            <div class="noticiasCard">
-              <img src="../img/cardNoticiasPF.png" alt="">
+            <div class="noticiasCard" id="1" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasPF.png">
               <div class="textoNoticias">
                 <h3>PF faz operação contra desmatamento na Amazônia</h3>
                 <div class="dataNoticiaCard">06/12/2023 às 11:13</div>
               </div>
             </div>
-            <div class="noticiasCard">
-              <img src="../img/cardNoticiasUE.png" alt="">
+            <div class="conteudoNoticias" id="conteudo01">
+              <div class="fecharConteudoNoticias" id='1' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>PF faz operação contra desmatamento na Amazônia</h1>
+              <p>Segundo a Polícia Federal, quadrilha seria responsável pelo maior desmatamento já registrado no bioma</p>
+              <img src="../img/cardNoticiasPF.png">
+              <h5>Carolina Figueiredo, da CNN <br> Em São Paulo</h5>
+              <p>De acordo com a PF, eles fazem parte de uma organização criminosa junto a uma família de agropecuaristas. Duas
+                empresas
+                de regularização fundiária também foram alvos, além do escritório de uma advogada que teria acesso privilegiado a
+                autuações e embargos realizados por uma autarquia ambiental federal.</p>
+              <p>As investigações identificaram que as empresas, por meio de seus sócios e funcionários, teriam fraudado cadastros
+                de
+                áreas públicas da União por meio da inserção de dados falsos em sistemas e falsificação de documentos. A Polícia
+                Federal
+                aponta que os funcionários atuavam também no planejamento e acompanhamento em tempo real do desmatamento.</p>
+              <p>A advogada citada, que é um dos alvos, também é investigada por, supostamente, negociar o pagamento de propina a
+                servidores públicos estaduais que teriam flagrado o desmatamento ilegal.</p>
+              <p>Na decisão que autoriza a operação, a Justiça Federal do Pará decretou o sequestro de aproximadamente R$ 116
+                milhões e
+                de nove imóveis do grupo. Além disso, ficou determinado o afastamento das funções dos servidores públicos e da
+                advogada.</p>
+              <p>Em agosto deste ano a Polícia Federal deflagrou a primeira fase da Operação Retomada. Na ocasião, a PF prendeu o
+                empresário Bruno Heller, apontado como “o maior devastador do bioma amazônico”. Também foram cumpridos três mandados
+                de
+                busca e apreensão nos municípios de Novo Progresso, no Pará, e em Sinop, no Mato Grosso. Houve ainda o sequestro de
+                veículos e de cerca de 20 imóveis, sendo 11 deles fazendas, além da apreensão de 10 mil cabeças de gado.</p>
+            </div>
+            <div class="noticiasCard" id="2" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasUE.png">
               <div class="textoNoticias">
                 <h3>Relutante a produtos do Mercosul, França é principal favorecida por mercado agrícola fechado da UE</h3>
                 <div class="dataNoticiaCard">05/12/2023 às 04:00</div>
               </div>
             </div>
-            <div class="noticiasCard">
-              <img src="../img/cardNoticiasMA.png" alt="">
+            <div class="conteudoNoticias" id="conteudo02">
+              <div class="fecharConteudoNoticias" id='2' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>Relutante a produtos do Mercosul, França é principal favorecida por mercado agrícola fechado da UE</h1>
+              <p>Agricultores franceses são maiores beneficiários de subsídios da UE; acordo com Mercosul potencialmente mudaria cenário</p>
+              <img src="../img/cardNoticiasUE.png">
+              <h5>CaDanilo Moliterno, da CNN <br> Em São Paulo</h5>
+              <p>O setor agrícola, parte dos parlamentares e até o presidente da França, Emmanuel Macron, se posicionam contrariamente
+              aos termos do acordo Mercosul-União Europeia. O tratado comercial mudaria a dinâmica do agro no continente, que
+              atualmente beneficia os franceses.</p>
+              <p>No bloco europeu, a dinâmica do agronegócio é regido pela Política Agrícola Comum (PAC) — que unifica regras para o
+              setor nos países-membros. O conjunto de normas traz medidas de mercado e subsídios a agricultores.</p>
+              <p>Segundo levantamento da CNN com base em dados da Comissão Europeia, a França é o principal beneficiário da PAC, tanto
+              nos pagamentos diretos aos agricultores quanto no gasto com desenvolvimento rural no continente.</p>
+              <p>Entre 2015 e 2021, os agricultores franceses receberam em pagamentos diretos da União Europeia o equivalente a R$ 262
+              bilhões. Isso representa 18% do total gasto do bloco neste tipo de operação.</p>
+            </div>
+            <div class="noticiasCard" id="3" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasMA.png">
               <div class="textoNoticias">
                 <h3>Desmatamento na Mata Atlântica cai 59% entre janeiro e agosto de 2023</h3>
                 <div class="dataNoticiaCard">29/11/2023 às 11:34</div>
               </div>
             </div>
-            <div class="noticiasCard">
-              <img src="../img/cardNoticiasBR.png" alt="">
+            <div class="conteudoNoticias" id="conteudo03">
+              <div class="fecharConteudoNoticias" id='3' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>Desmatamento na Mata Atlântica cai 59% entre janeiro e agosto de 2023</h1>
+              <p>Queda foi observada em todos os 15 estados que compõem o bioma; dados são do Sistema de Alertas de Desmatamento MataAtlântica</p>
+              <img src="../img/cardNoticiasMA.png">
+              <h5>Carolina Figueiredo, da CNN <br> Em São Paulo</h5>
+              <p>O desmatamento na região da Mata Atlântica brasileira registrou queda de 59% nos primeiros oito meses de 2023, segundo
+              dados do novo boletim do Sistema de Alertas de Desmatamento (SAD) Mata Atlântica, divulgado nesta quarta-feira (29).</p>
+              <p>Em todo o país, a área desmatada entre janeiro e agosto deste ano foi de 9.216 hectares. No mesmo período do ano passado
+              foram 22.240 hectares. De acordo com a Fundação SOS Mata Atlântica, a Arcplan e o MapBiomas — instituições que coordenam
+              a plataforma — o desmatamento já vem em uma tendência de queda desde o começo do ano. Até maio, a redução era de 42%.</p>
+              <p>Há, no entanto, uma ressalva em relação à área de abrangência do estudo: os dados do SAD levam em conta apenas os
+              limites do bioma Mata Atlântica estabelecidos pelo IBGE em 2019. Na área de aplicação da Lei da Mata Atlântica,
+              promulgada em 2006, que inclui encraves na Caatinga e no Cerrado, a diminuição foi de 26% no mesmo período.</p>
+            </div>
+            <div class="noticiasCard" id="4" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasBR.png">
               <div class="textoNoticias">
                 <h3>“Brasil reduziu desmatamento em 10 meses e chega à COP 28 de cabeça erguida”, diz Marina à CNN</h3>
                 <div class="dataNoticiaCard">28/11/2023 às 11:48</div>
               </div>
             </div>
-            <div class="noticiasCard">
-              <img src="../img/cardNoticiasAM.png" alt="">
+            <div class="conteudoNoticias" id="conteudo04">
+              <div class="fecharConteudoNoticias" id='4' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>“Brasil reduziu desmatamento em 10 meses e chega à COP 28 de cabeça erguida”, diz Marina à CNN</h1>
+              <p>Às vésperas da conferência, ministra do Meio Ambiente falou sobre expectativas da pasta</p>
+              <img src="../img/cardNoticiasBR.png">
+              <h5>da CNN <br></h5>
+              <p>Em entrevista à CNN nesta terça-feira (28), a ministra do Meio Ambiente, Marina Silva, defendeu que o Brasil chegará à
+              28ª Conferência das Nações Unidas sobre Mudança do Clima (COP 28) de “cabeça erguida” diante dos resultados no índice de
+              desmatamento no país.</p>
+              <p>“O Brasil, que pegou um governo, o presidente Lula, de terra arrasada, onde as políticas ambientais tinham sido
+              desmontadas, o Brasil estava na condição de pária e em 10 meses consegue esse feito de reduzir desmatamento em 48,9%,
+              quase 50%”, disse a ministra.</p>
+              <p>“As pessoas tinham muita dúvida se iríamos conseguir esse resultado, sobretudo em função de que é uma situação que havia
+              um desmonte da política ambiental, das estruturas, e também o aumento da natureza dos problemas que levam ao
+              desmatamento: tráfico de drogas, tráfico de armas, pesca ilegal, grilagem, todas essas criminalidades. Então o Brasil,
+              nesse quesito, está indo de cabeça erguida, sabendo que o nosso compromisso é dasmatamento zero até 2030”, acrescentou.</p>
+            </div>
+            <div class="noticiasCard" id="5" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasAM.png">
               <div class="textoNoticias">
                 <h3>Desmatamento na Amazônia cai 22% em um ano, mas onda de queimadas preocupa</h3>
                 <div class="dataNoticiaCard">09/11/2023 às 19:58</div>
               </div>
             </div>
+            <div class="conteudoNoticias" id="conteudo05">
+              <div class="fecharConteudoNoticias" id='5' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>Desmatamento na Amazônia cai 22% em um ano, mas onda de queimadas preocupa</h1>
+              <p>No total, foram desmatados no bioma 9.001 km² em 12 meses; Ibama pedirá mais recursos ao Fundo Amazônia</p>
+              <img src="../img/cardNoticiasAM.png">
+              <h5>Estadão Conteúdo<br></h5>
+              <p>O desmatamento na Amazônia caiu 22,3% em um ano, segundo dados apresentados pelo Ministério do Meio Ambiente nesta
+              quinta-feira (9). O balanço compreende o período entre agosto de 2022 e julho deste ano, parte no governo Jair Bolsonaro
+              (PL) e parte na gestão Luiz Inácio Lula da Silva (PT).</p>
+              <p>A floresta, porém, tem sofrido nos últimos meses com uma onda de queimadas, com destaque para a região do Amazonas, onde
+              nuvens de fumaça encobrem várias cidades, entre elas Manaus.</p>
+              <p>No total, foram desmatados no bioma 9.001 km² nestes 12 meses, conforme os dados consolidados do Projeto de
+              Monitoramento do Desmatamento na Amazônia Legal por Satélite (Prodes), do Instituto Nacional de Pesquisas Espaciais
+              (Inpe), órgão do Ministério da Ciência, Tecnologia e Inovação. A perda de cobertura vegetal é mapeada por meio de
+              satélites e a contagem da taxa de desmatamento sempre é feita de agosto de um ano até julho do ano seguinte.</p>
+            </div>
           </div>
           <div class="noticiasMaisLidas">
             <h1 class="tituloNot">Mais Lidas</h1>
             <ul class="maisLidas">
-              <li class="maisLidasCard">PF faz operação contra desmatamento na Amazônia</li>
-              <li class="maisLidasCard">Relutante a produtos do Mercosul, França é principal favorecida por mercado agrícola fechado da UE</li>
-              <li class="maisLidasCard">Desmatamento na Mata Atlântica cai 59% entre janeiro e agosto de 2023</li>
-              <li class="maisLidasCard">“Brasil reduziu desmatamento em 10 meses e chega à COP 28 de cabeça erguida”, diz Marina à CNN</li>
-              <li class="maisLidasCard">Desmatamento na Amazônia cai 22% em um ano, mas onda de queimadas preocupa</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(1)">PF faz operação contra desmatamento na Amazônia</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(2)">Relutante a produtos do Mercosul, França é principal favorecida por mercado agrícola fechado da UE</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(3)">Desmatamento na Mata Atlântica cai 59% entre janeiro e agosto de 2023</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(4)">“Brasil reduziu desmatamento em 10 meses e chega à COP 28 de cabeça erguida”, diz Marina à CNN</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(5)">Desmatamento na Amazônia cai 22% em um ano, mas onda de queimadas preocupa</li>
             </ul>
           </div>
         </div>
+      </div>
+      <div class="paginasNoticias">
+        <img src="https://www.cnnbrasil.com.br/wp-content/themes/master-theme/assets/img/back.svg">
+        <h3>Voltar</h3>
+        <p>1</p>
+        <h3>Avançar</h3>
+        <img src="https://www.cnnbrasil.com.br/wp-content/themes/master-theme/assets/img/next.svg">
       </div>
     </main>
     <footer>

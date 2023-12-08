@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>EcoViva</title>
+  </head>
+  <body id="noticias">
+    <style>
+      .fundoMainNoticias {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        height: 750px;
+        width: 100%;
+        background-size: cover;
+        background-image: url(../img/fundoBrancoNoticiasEN.png);
+        .dark-mode & {
+          background-image: url(../img/fundoEscuroNoticiasEN.png);
+        }
+      }
+    </style>
+    <header>
+      <div class="container">
+        <div id="header">
+          <div class="logoHea"><img id="logoHea" src="../img/logo.png" alt="LogoHea">
+            <h1>EcoViva</h1>
+          </div>
+          <button type="button" class="btn" id="inicioHea"><a href="homeEN.html">Home</a></button>
+          <button type="button" class="btn" id="sobreNosHea"><a href="sobreEN.html">About Us</a></button>
+          <button type="button" class="btn" id="contatoHea"><a href="contatoEN.html">Contact</a></button>
+          <button type="button" id="btn" onclick="config()"><span class="material-symbols-outlined">menu</span></button>
+          <div class="config">
+            <ul>
+              <li id="idioma" onclick="escolha(id)"><button class="btn-config">Change language</button></li>
+              <li id="tema" onclick="escolha(id)"><button class="btn-config">Change Theme</button></li>
+              <div class="idioma">
+                <ul>
+                  <li id="portugues" onclick="escolherIdioma(id)">Português</li>
+                  <li id="ingles" onclick="escolherIdioma(id)">English</li>
+                </ul>
+              </div>
+              <div class="tema">
+                <ul>
+                  <li id="escuro" onclick="mudarTema(id)">Dark</li>
+                  <li id="claro" onclick="mudarTema(id)">White</li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="fundoNoticias">
+      <div class="container">
+        <div class="fundoMainNoticias"></div>
+        <div id="ajuste"></div>
+        <div id="quebraMain"></div>
+        <div class="noticias">
+          <div class="todasNoticias">
+            <h1 class="tituloNot">All News</h1>
+            <div class="noticiasCard" id="1" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasPF.png">
+              <div class="textoNoticias">
+                <h3>PF carries out operation against deforestation in the Amazon</h3>
+                <div class="dataNoticiaCard">12/06/2023 at 11:13</div>
+              </div>
+            </div>
+            <div class="conteudoNoticias" id="conteudo01">
+              <div class="fecharConteudoNoticias" id='1' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>PF carries out operation against deforestation in the Amazon</h1>
+              <p>According to the Federal Police, the gang would be responsible for the largest deforestation ever recorded in the biome</p>
+              <img src="../img/cardNoticiasPF.png">
+              <h5>Carolina Figueiredo, from CNN <br> In São Paulo</h5>
+              <p>According to the PF, they are part of a criminal organization alongside a family of farmers. Two companies
+              of land regularization were also targets, in addition to the office of a lawyer who would have privileged access to
+              assessments and embargoes carried out by a federal environmental authority.</p>
+              <p>The investigations identified that the companies, through their partners and employees, had defrauded registrations in
+              public areas of the Union through the insertion of false data into systems and falsification of documents. The police Federal
+              points out that employees also worked on planning and monitoring deforestation in real time.</p>
+              <p>The aforementioned lawyer, who is one of the targets, is also being investigated for allegedly negotiating the payment of bribes to
+              state public servants who allegedly caught illegal deforestation.</p>
+              <p>In the decision authorizing the operation, the Federal Court of Pará decreed the kidnapping of approximately R$ 116 million and
+              of nine properties in the group. In addition, it was determined that public servants and the attorney.</p>
+              <p>In August of this year, the Federal Police launched the first phase of Operation Retomada. On that occasion, the PF arrested the businessman Bruno Heller, considered “the greatest devastator of the Amazon biome”. Three warrants were also served in
+              search and seizure in the municipalities of Novo Progresso, in Pará, and in Sinop, in Mato Grosso. There was also the kidnapping of vehicles and around 20 properties, 11 of which were farms, in addition to the seizure of 10 thousand head of cattle.</p>
+            </div>
+            <div class="noticiasCard" id="2" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasUE.png">
+              <div class="textoNoticias">
+                <h3>Reluctant to Mercosur products, France is the main beneficiary of the closed EU agricultural market</h3>
+                <div class="dataNoticiaCard">12/05/2023 at 04:00</div>
+              </div>
+            </div>
+            <div class="conteudoNoticias" id="conteudo02">
+              <div class="fecharConteudoNoticias" id='2' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>Reluctant to Mercosur products, France is the main beneficiary of the closed EU agricultural market</h1>
+              <p>French farmers are biggest beneficiaries of EU subsidies; agreement with Mercosur would potentially change the scenario</p>
+              <img src="../img/cardNoticiasUE.png">
+              <h5>CaDanilo Moliterno, from CNN <br> in São Paulo</h5>
+              <p>The agricultural sector, some parliamentarians and even the President of France, Emmanuel Macron, take a contrary
+                position
+                to the terms of the Mercosur-European Union agreement. The commercial treaty would change the dynamics of agriculture
+                on the continent, which
+                currently benefits the French.</p>
+              <p>In the European bloc, the dynamics of agribusiness are governed by the Common Agricultural Policy (PAC) — which
+                unifies rules for the
+                sector in member countries. The set of standards includes market measures and subsidies for farmers.</p>
+              <p>According to a CNN survey based on data from the European Commission, France is the main beneficiary of the CAP, both
+                in direct payments to farmers and in spending on rural development on the continent.</p>
+              <p>Between 2015 and 2021, French farmers received direct payments from the European Union the equivalent of R$262
+                billion. This represents 18% of the block's total spend on this type of operation.</p>
+            </div>
+            <div class="noticiasCard" id="3" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasMA.png">
+              <div class="textoNoticias">
+                <h3>Deforestation in the Atlantic Forest falls 59% between January and August 2023</h3>
+                <div class="dataNoticiaCard">11/29/2023 at 11:34</div>
+              </div>
+            </div>
+            <div class="conteudoNoticias" id="conteudo03">
+              <div class="fecharConteudoNoticias" id='3' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>Deforestation in the Atlantic Forest falls 59% between January and August 2023</h1>
+              <p>Who was observed in all 15 states that make up the biome; data are from the Atlantic Forest Deforestation Alert System</p>
+              <img src="../img/cardNoticiasMA.png">
+              <h5>Carolina Figueiredo, from CNN <br> in São Paulo</h5>
+              <p>Deforestation in the Brazilian Atlantic Forest region recorded a 59% drop in the first eight months of 2023,
+                according to
+                data from the new bulletin from the Deforestation Alert System (SAD) Atlantic Forest, released this Wednesday (29).
+              </p>
+              <p>Across the country, the area deforested between January and August this year was 9,216 hectares. In the same period
+                last year
+                there were 22,240 hectares. According to the SOS Mata Atlântica Foundation, Arcplan and MapBiomas — institutions that
+                coordinate
+                the platform — deforestation has already been on a downward trend since the beginning of the year. By May, the
+                reduction was 42%.</p>
+              <p>There is, however, a caveat regarding the area covered by the study: the SAD data only take into account the
+                limits of the Atlantic Forest biome established by IBGE in 2019. In the area of application of the Atlantic Forest
+                Law,
+                enacted in 2006, which includes enclaves in the Caatinga and Cerrado, the decrease was 26% in the same period.</p>
+            </div>
+            <div class="noticiasCard" id="4" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasBR.png">
+              <div class="textoNoticias">
+                <h3>“Brazil reduced deforestation in 10 months and arrives at COP 28 with its head held high”, says Marina to CNN</h3>
+                <div class="dataNoticiaCard">11/28/2023 at 11:48</div>
+              </div>
+            </div>
+            <div class="conteudoNoticias" id="conteudo04">
+              <div class="fecharConteudoNoticias" id='4' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>“Brazil reduced deforestation in 10 months and arrives at COP 28 with its head held high”, says Marina to CNN</h1>
+              <p>On the eve of the conference, the Minister of the Environment spoke about the department's expectations</p>
+              <img src="../img/cardNoticiasBR.png">
+              <h5>from CNN <br></h5>
+              <p>In an interview with CNN this Tuesday (28), the Minister of the Environment, Marina Silva, argued that Brazil will reach
+              28th United Nations Conference on Climate Change (COP 28) with “head held high” in view of the results in the climate
+              indexdeforestation in the country.</p>
+              <p>“Brazil, which took on a government, President Lula, of scorched earth, where environmental policies had been
+                dismantled, Brazil was in a pariah condition and in 10 months it achieved this feat of reducing deforestation by
+                48.9%,
+                almost 50%”, said the minister.</p>
+              <p>“People had a lot of doubts whether we would achieve this result, especially given that it was a situation that had
+                a dismantling of environmental policy, structures, and also an increase in the nature of the problems that lead to
+                deforestation: drug trafficking, weapons trafficking, illegal fishing, land grabbing, all these crimes. So Brazil,
+                In this regard, he is holding his head high, knowing that our commitment is zero deforestation by 2030”, he added.</p>
+            </div>
+            <div class="noticiasCard" id="5" onclick="conteudoNoticias(id)">
+              <img src="../img/cardNoticiasAM.png">
+              <div class="textoNoticias">
+                <h3>Deforestation in the Amazon falls 22% in one year, but wave of fires worries</h3>
+                <div class="dataNoticiaCard">11/09/2023 at 19:58</div>
+              </div>
+            </div>
+            <div class="conteudoNoticias" id="conteudo05">
+              <div class="fecharConteudoNoticias" id='5' onclick="fecharConteudoNoticias(id)">X</div>
+              <h1>Deforestation in the Amazon falls 22% in one year, but wave of fires worries</h1>
+              <p>In total, 9,001 km² were deforested in the biome in 12 months; Ibama will ask for more resources from the Amazon Fund</p>
+              <img src="../img/cardNoticiasAM.png">
+              <h5>Estadão Content<br></h5>
+              <p>Deforestation in the Amazon fell 22.3% in one year, according to data presented by the Ministry of the Environment in
+                this
+                Thursday (9). The balance covers the period between August 2022 and July this year, part of the Jair Bolsonaro
+                government
+                (PL) and part of the management Luiz Inácio Lula da Silva (PT).</p>
+              <p>The forest, however, has suffered in recent months with a wave of fires, particularly in the Amazon region, where
+                clouds of smoke cover several cities, including Manaus.</p>
+              <p>In total, 9,001 km² were deforested in the biome in these 12 months, according to consolidated data from the
+                Monitoring of Deforestation in the Legal Amazon by Satellite (Prodes), from the National Institute for Space Research
+                (Inpe), an agency of the Ministry of Science, Technology and Innovation. The loss of vegetation cover is mapped using
+                satellites and the deforestation rate is always counted from August of one year to July of the following year.</p>
+            </div>
+          </div>
+          <div class="noticiasMaisLidas">
+            <h1 class="tituloNot">Mais Lidas</h1>
+            <ul class="maisLidas">
+              <li class="maisLidasCard" onclick="conteudoNoticias(1)">PF carries out operation against deforestation in the Amazon</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(2)">Reluctant to Mercosur products, France is the main beneficiary of the closed EU agricultural market</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(3)">Deforestation in the Atlantic Forest falls 59% between January and August 2023</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(4)">“Brazil reduced deforestation in 10 months and arrives at COP 28 with its head held high”, says Marina to CNN</li>
+              <li class="maisLidasCard" onclick="conteudoNoticias(5)">Deforestation in the Amazon falls 22% in one year, but wave of fires worries</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="paginasNoticias">
+        <img src="https://www.cnnbrasil.com.br/wp-content/themes/master-theme/assets/img/back.svg">
+        <h3>Return</h3>
+        <p>1</p>
+        <h3>Advance</h3>
+        <img src="https://www.cnnbrasil.com.br/wp-content/themes/master-theme/assets/img/next.svg">
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="logoRod"><img id="logoHea" src="../img/logo.png" alt="Logo">
+            <h1>EcoViva</h1>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="contatoRod">
+            <h1 class="tituloRod"><a href="contatoEN.html">Contact:</a></h1>
+            <ul>
+              <li>Phone: 4002-8922</li>
+              <li>Email: cre.car@ifsp.edu.br</li>
+            </ul>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="sedeRod">
+            <h1 class="tituloRod">Thirst:</h1>
+            <p>R. Pedro Vicente, 625, Canindé, São Paulo - SP</p>
+          </div>
+          <div class="quebraRod"></div>
+          <div class="escritorioRod">
+            <h1 class="tituloRod">Office:</h1>
+            <p>Av. Bahia, 1739, Caraguatatuba - SP</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -81,3 +81,11 @@ function mudarTema(id) {
     document.querySelector('html').classList.remove('dark-mode')
   }
 }
+
+function conteudoNoticias(id) {
+  document.querySelector('#conteudo0'+id).classList.add('ativaConteudoNoticias')
+}
+
+function fecharConteudoNoticias(id) {
+  document.querySelector('#conteudo0'+id).classList.remove('ativaConteudoNoticias')
+}
